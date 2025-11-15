@@ -1,0 +1,24 @@
+1. ¿Qué diferencia tiene el deque frente a la cola circular normal?
+   El deque permite insertar y eliminar elementos por ambos 
+   extremos (inicio y final), mientras que la cola circular tradicional
+    solo permite insertar por el final y eliminar por el inicio (frente). 
+
+2. ¿Qué operaciones permiten simular tanto FIFO como LIFO?
+    FIFO (cola tradicional):
+        insert_rear() para encolar
+        delete_front() para desencolar
+
+    LIFO (pila):
+        insert_front() para apilar
+        delete_front() para desapilar
+        o
+        insert_rear() con delete_rear()
+
+3. Investiga que aplicaciones prácticas tiene deque.
+    Un deque se usa en muchas aplicaciones reales, entre ellas:
+        Implementación del algoritmo Sliding Window en análisis de datos.
+        Estructuras para historial de navegación (ir adelante/atrás).
+        Modelos de colas de prioridad simplificadas.
+        Simulación de colas de procesos con prioridad variable.
+        Implementación de árboles y grafos, por ejemplo para BFS con manejo eficiente de extremos.
+        En lenguajes modernos (Python, Java, C++), es una estructura estándar por su eficiencia O(1) en ambos extremos.

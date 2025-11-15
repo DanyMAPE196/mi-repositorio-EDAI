@@ -1,0 +1,10 @@
+1. ¿Por qué en la cola circular no se desperdician posiciones como en la cola lineal?
+    Porque cuando un elemento se desencola, el índice "inicio" avanza de manera 
+    circular usando el operador módulo. Esto nos deja utilizar las posiciones liberadas
+    sin tener que recorrer elementos ni reiniciar indices. 
+
+2. ¿Qué pasa cuando el índice final llega al final del arreglo?
+    El indice vuelve automáticamente al inicio (0). 
+
+3. ¿Qué sucede si intentas encolar cuando la cola está llena?
+    Se bloquea la operación y no se puede insertar el elemento. 
