@@ -1,0 +1,10 @@
+1. ¿Qué diferencias notaron entre el orden de salida de la pila y de la cola?
+    En la pila el ultimo dato que entra, es el primero en salir y, en la cola,
+    el primero en entrar es el primero en salir. 
+
+2. ¿Qué sucede si intentan hacer pop en una pila vacía o dequeue en una cola vacía?
+    Sale un mensaje de que la cola está vacía y no deja extraer ningún dato. 
+
+3. ¿Qué sucede si intentan insertar más elementos que la capacidad máxima?
+     El programa marca que la estructura está llena y no permite seguir insertando
+     datos. 
