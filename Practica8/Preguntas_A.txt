@@ -1,0 +1,15 @@
+1. ¿Por qué es más fácil eliminar un nodo intermedio en una lista doblemente
+ligada que en una lista simple?
+    Porque en una lista doblemente ligada cada nodo tiene un puntero
+     al siguiente y otro al anterior, asi que cuando quiero eliminar un nodo,
+     lo puedo conectar el nodo anterior con el siguiente y sin tener que 
+     recorrer desde el principio para encontrar el nodo previo. 
+
+2. ¿Qué sucede si se olvida actualizar alguno de los punteros anterior o
+siguiente?
+    La lista se rompe y puede pasar que ya no se pueda recorrer en la 
+    lista o que el porgrama falle. 
+
+3. ¿En qué escenarios prácticos se usa una lista doblemente ligada?
+    Se usan cuando se quiere recorrer datos en ambos sentidos, por ejemplo,
+    para el historial de navegación. 
