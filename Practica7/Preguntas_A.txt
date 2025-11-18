@@ -1,0 +1,8 @@
+1. ¿Por qué las listas enlazadas no requieren tamaño fijo como los arreglos?
+    Porque los nodos se creando conforme se necesitan (usando malloc) y porque no
+    son un arreglo, que ya tienen un tamaño asignado desde el principio.
+
+2. ¿Qué diferencia hay entre mover la cabeza y modificar los punteros internos?
+    El mover la cabeza sería que el primer nodo cambie, ymodificar los punteros internos 
+    es cuando se quita un nodo de en medio, que se ajusta el enlace del nodo anterior al 
+    siguiente. 
