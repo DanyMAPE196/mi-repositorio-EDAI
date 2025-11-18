@@ -9,11 +9,11 @@ int main(){
     float suma = 0.0; //variable para acumular la suma
     float promedio; //variable para calcular el promedio
 
-    //Se solicita al usuario la cantidad de estudiantes que desea registrar inicialmente
+    //Pedimos al usuario la cantidad de estudiantes que desea registrar 
     printf("¿Cuántos estudiantes deseas ingresar?: ");
     scanf("%d", &n);
 
-    //Se reserva la memoria dinámica para almacenar las calificaciones
+    //Reservamos la memoria dinámica para almacenar las calificaciones
     calificaciones = (float*) malloc(n * sizeof(float));
     if (calificaciones == NULL)
     {
@@ -30,28 +30,28 @@ for(i = 0; i < n; i++)
     suma += calificaciones [i]; //Para sumar las calificaciones y calcular el pormedio 
 }
 
-//Se calcula y se imprime el promedio inicial 
+//Calculamos e  imprimimos el promedio inicial 
 promedio = suma / n;
 printf("Promedio inicial: %.2f\n", promedio);
 
-//Se le pregunta a l usuario si desea agregar más estudiantes
+//Preguntamos al usuario si desea agregar más estudiantes
 printf ("¿Deseas agregar más estudiantes? (cantidad, 0 para no): ");
 scanf("%d", &agregar);
 
 
 if(agregar > 0)
 {
-    //Se amplia el arreglo (realloc) para almacenar más calificaciones si es solicitado
+    //Ampliamos el arreglo (realloc) para almacenar más calificaciones si es solicitado
     float*tmp = (float*)realloc(calificaciones, (n + agregar) * sizeof(float));
     if(tmp == NULL)
     {
         printf("Error al ampliar memoria.\n");
         free(calificaciones);
-        return 1; //se libera memoria si realloc falla
+        return 1; //Liberamos memoria si realloc falla
     }
-    calificaciones = tmp; //actualizamos el puntero con la nueva memoria
+    calificaciones = tmp; //Actualizamos el puntero con la nueva memoria
 
-    //Se capturan las calificaciones agregadas y se actualiza la suma
+    //Campturamos las calificaciones agregadas y se actualiza la suma
     for(i = n; i <n + agregar; i++)
     {
         printf("Calificación del estudiante %d: ", i + 1);
@@ -73,7 +73,7 @@ for(i = 0; i < n; i++)
 //Se imprime el promedio  total 
 printf("Promedio general: %.2f\n\n", promedio);
 
-//Se libera la memoria 
+//Liberamos la memoria 
     free(calificaciones);
     printf("Memoria liberada correctamente.\n");
 
