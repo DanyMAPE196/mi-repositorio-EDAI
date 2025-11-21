@@ -1,0 +1,17 @@
+print("\n===Ejemplo 1===\n")
+print( 1 + 5)
+print(6 * 3)
+print(10 - 4)
+print(100 / 50)
+print(10 % 2)
+print( ((20 * 3) + (10 + 1)) / 10)
+print(2 ** 2)
+
+print("\n===Ejemplo 2===\n")
+False and True
+
+print(7 < 5)
+print(7 > 5)
+print((11 * 3) + 2 == 36 - 1)
+print((11 * 3) + 2 >= 36)
+print("curso" != "CuRsO")
