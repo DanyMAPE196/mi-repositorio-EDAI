@@ -1,0 +1,13 @@
+función maximo_divide_conquer(lista):
+    si lista tiene un solo elemento:
+        devolver ese elemento
+
+mitad = longitud(lista)
+
+max_izq = maximo_divide_conquer(lista desde 0 hasta mitad)
+max_der = maximo_divide_conquer(lista de mitad hasta el final)
+
+si max_izq > max_der:
+    devolver max_izq
+sino:
+    devolver max_der

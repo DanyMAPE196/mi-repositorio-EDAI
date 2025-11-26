@@ -1,0 +1,5 @@
+El caso base se da cuando la lista ya solo tiene un elemento, entonces ya
+no tiene caso seguir dividiendo, porque ese único valor es el máximo de esa parte 
+y la recursión se detiene. 
+
+

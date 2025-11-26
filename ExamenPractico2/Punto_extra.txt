@@ -1,0 +1,6 @@
+El algoritmo termina revisando cada elemento de la lista, solo que lo hace 
+dividiéndolos en partes y aunque use recursión tiene que ver cada valor de 
+todos modos para obtener ese máximo. 
+
+Por eso la complejidad sería O(n), porque depende del número de elementos 
+que haya en la lista, o sea, crece de manera lineal. 

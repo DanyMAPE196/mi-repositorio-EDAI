@@ -1,0 +1,14 @@
+¿Cómo dividí el problema? (Divide & Conquer)
+Para encontrar el valor máximo de un arreglo utilizando
+Divide & conquer, lo que hago es partir el arreglo en dos partes,
+esto para facilitar la busqueda, ya que hacerlo de un jalón
+sería más pesado. 
+
+Después, busco el máximo de cada mitad, pero también de manera recursiva.
+Es cómo si ahora cada mitad se vuelve "un problema nuevo" pero más pequeño 
+
+Cuando ya tengo los máximos, los comparo y el mayor de estos
+es el resultado final. 
+
+En resumen hice los tres pasos de Divide & Conquer:
+dividir, resolver y combinar 
